@@ -1,10 +1,5 @@
 {
   "mappings": [
-    "/content/aami-demo/:/",
-    "/content/aami-demo/configuration:/.helix/config.json",
-    "/content/aami-demo/metadata:/metadata.json"
-  ],
-  "includes": [
-    "/content/aami-demo/"
+    "/:/"
   ]
 }
