@@ -774,3 +774,75 @@ main .form input[type="text"]:focus {
 }
 
 /* Button styling has been moved up in the file */
+
+/* Styling for the bottom info bar with indicative quote and privacy statement */
+main .form-container .default-content-wrapper {
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+main .form-container .default-content-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .form-container .default-content-wrapper ul li {
+  display: flex;
+  align-items: center;
+}
+
+main .form-container .default-content-wrapper ul li:first-child::before {
+  content: "•";
+  margin-right: 10px;
+  color: #333;
+}
+
+main .form-container .default-content-wrapper ul li p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+main .form-container .default-content-wrapper ul li p a {
+  color: #0074cc;
+  text-decoration: none;
+}
+
+main .form-container .default-content-wrapper ul li p a:hover {
+  text-decoration: underline;
+}
+
+main .form-container .default-content-wrapper ul li p.button-container {
+  margin: 0;
+}
+
+main .form-container .default-content-wrapper ul li p.button-container a.button {
+  display: inline-block;
+  background-color: #0074cc;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+main .form-container .default-content-wrapper ul li p.button-container a.button:hover {
+  background-color: #005ba1;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  main .form-container .default-content-wrapper ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
