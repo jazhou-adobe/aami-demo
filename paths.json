@@ -1,5 +1,8 @@
 {
   "mappings": [
-    "/:/"
+    "/content/aami-demo/:/"
+  ],
+  "includes": [
+    "/content/aami-demo/"
   ]
 }
